@@ -157,11 +157,15 @@ python main.py clear-cache
 ## 📄 Hash File Format
 
 The tool accepts hash files in the standard format used by tools like md5sum:
+
 hash  filename
+
 hash  filename
 
 For example:
+
 d41d8cd98f00b204e9800998ecf8427e  empty.txt
+
 5d41402abc4b2a76b9719d911017c592  hello.txt
 
 Hash files can:

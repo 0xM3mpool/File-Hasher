@@ -11,3 +11,17 @@ A simple command-line tool for calculating and verifying file checksums using va
 - 💾 Cache hashes for faster repeated access
 - 📊 Show file information (size, modification time)
 - 🚀 Efficient processing of large files
+
+## 🚀 Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/file-hasher.git
+cd file-hasher
+```
+
+2. Make the script executable (Unix/Linux/macOS):
+```bash
+chmod +x main.py
+```
+

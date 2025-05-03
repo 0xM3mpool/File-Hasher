@@ -16,7 +16,7 @@ A simple command-line tool for calculating and verifying file checksums using va
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/file-hasher.git
+git clone https://github.com/0xM3mpool/file-hasher.git
 cd file-hasher
 ```
 
@@ -87,3 +87,70 @@ Options:
 ```bash
 python main.py clear-cache
 ```
+
+## 📝 Examples
+
+### Hash a single file:
+```bash
+# Default SHA256 hash
+python main.py file document.pdf
+```
+
+```bash
+# With MD5 algorithm
+python main.py file image.jpg -a md5
+```
+
+```bash
+# Show file info
+python main.py file large_file.zip -i
+```
+
+### Hash a directory:
+```bash
+# Hash all files in a directory
+python main.py dir ~/Downloads
+```
+
+```bash
+# With specific algorithm
+python main.py dir ~/Documents -a sha1
+```
+
+```bash
+# Non-recursive
+python main.py dir ~/Projects -n
+```
+
+### Compare files:
+```bash
+# Compare two files
+python main.py compare file1.txt file2.txt
+```
+
+```bash
+# With specific algorithm
+python main.py compare photo1.jpg photo2.jpg -a md5
+```
+
+### Verify against a hash file:
+```bash
+# Verify files in current directory
+python main.py verify checksums.md5
+```
+
+```bash
+# Verify files in specified directory
+python main.py verify hashes.sha256 -d ~/Downloads
+```
+
+```bash
+# With specific algorithm
+python main.py verify checksums.txt -a sha256
+```
+
+### Clear cache:
+```bash
+python main.py clear-cache
+```
+

@@ -25,3 +25,16 @@ cd file-hasher
 chmod +x main.py
 ```
 
+## 🔍 Usage
+
+```bash
+python main.py <mode> [options]
+```
+
+## ⚙️ Modes
+
+- `file`: Hash a single file
+- `dir`: Hash all files in a directory
+- `compare`: Compare hashes of two files
+- `verify`: Verify files against a hash file
+- `clear-cache`: Clear the hash cache
